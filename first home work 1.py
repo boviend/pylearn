@@ -48,9 +48,9 @@ splitting_input = input_name_age.split("*")
 d0 = date.fromisoformat(splitting_input[1])
 d1 = date.fromisoformat(splitting_input[2])
 delta = (d1 - d0)
-age_var = int(delta.days)/365
+age_var = int(delta.days)//365
 
-print("Full name: " + splitting_input[1] + "\n" + "Age: " + str(age_var))
+print("Full name: " + splitting_input[0] + "\n" + "Age: " + str(age_var))
 
 
 #end of homework
