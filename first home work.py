@@ -1,3 +1,6 @@
+
+
+
 # Task1
 #  1
 #
@@ -48,3 +51,6 @@ delta = (d1 - d0)
 age_var = int(delta.days)/365
 
 print("Full name: " + splitting_input[1] + "\n" + "Age: " + str(age_var))
+
+
+#end of homework
