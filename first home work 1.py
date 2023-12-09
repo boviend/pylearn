@@ -26,12 +26,12 @@ print(x2)
 #  3
 #
 name = input("Please enter your name: ")
-print("Hello " + name)
+print(f"Hello {name}")
 
 #  4
 #
-UAH_amount = input("Please enter money amount in UAH: ")
-print("By the 12.08.2034 rate your {UAH_amount} UAH will equal = " + str(float(UAH_amount) / 28) + "USD")
+UAH_amount = float(input("Please enter money amount in UAH: "))
+print("By the 12.08.2034 rate your {UAH_amount} UAH will equal = " + str(round(UAH_amount / 28,2)) + "USD")
 
 # Task2
 #
@@ -50,7 +50,7 @@ d1 = date.fromisoformat(splitting_input[2])
 delta = (d1 - d0)
 age_var = int(delta.days)//365
 
-print("Full name: " + splitting_input[0] + "\n" + "Age: " + str(age_var))
+print(f"Full name: {splitting_input[0]}\n Age: {age_var}")
 
 
 #end of homework
