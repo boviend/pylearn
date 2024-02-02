@@ -60,11 +60,10 @@ def pow_pow(x):
 
 
 def some_gen(begin, n, func):
-    result = [begin]
-    for i in range(n - 1):
-        result.append(func(result[-1]))
-    return result
+    for y in range(n):
+        yield begin
+        begin = func(begin)
 
 
-print(some_gen(2, 4, pow_pow))
+print(list(some_gen(2, 6, pow_pow)))
 
