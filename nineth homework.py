@@ -9,11 +9,10 @@ print(is_even(24945638940387 ** 3))
 
 def is_more_even(number_new):
     odd_numbers = [1, 3, 5, 7, 9]
-    if str(number_new)[-1] in odd_numbers:
-        return False
-    else:
-        return True
+    a = 0
+    last_number = str(number_new)[-1]
+    return last_number not in odd_numbers
 
 
-is_more_even_func = is_more_even(444543)
+is_more_even_func = is_more_even(44434)
 print(is_more_even_func)
