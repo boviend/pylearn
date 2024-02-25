@@ -1,16 +1,14 @@
-# This is a sample Python script.
+from student import Student
+from group import Group
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+st1 = Student('Male', 30, 'Steve', 'Jobs', 'AN142')
+st2 = Student('Female', 25, 'Liza', 'Taylor', 'AN145')
+gr = Group('PD1')
+gr.add_student(st1)
+gr.add_student(st2)
+print(gr)
+print(gr.find_student('Jobs'))  # 'Steve Jobs'
+print(gr.find_student('Jobs2'))  # None
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+gr.delete_student('Taylor')
+print(gr)  # Only one student
